@@ -63,14 +63,14 @@ class NewsListTableViewController: UITableViewController{
     // 2
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 3
-        let cell = tableView.dequeueReusableCell(withIdentifier: "newsTableCell", for: indexPath) as! NewsListTableCellViewController
+        let cell = tableView.dequeueReusableCell(withIdentifier: "newsTableCell", for: indexPath) as! NewsListTableCellView
         
         let row = indexPath.row
         
         // 4
         //cell.textLabel?.text = self.arr[row]["title"].rawString()!
         
-        cell.articleTitleLabel.text = self.arr[row]["title"].rawString()!
+        cell.articleTitleButton.setTitle(self.arr[row]["title"].rawString()!, for: .normal)
         cell.articleAuthorLabel.text = self.arr[row]["author"].rawString()!
         cell.articleImage.sd_setImage(with: URL(string:self.arr[row]["urlToImage"].rawString()! ))
         cell.articlePublishingDateLabel.text = self.arr[row]["publishedAt"].rawString()!

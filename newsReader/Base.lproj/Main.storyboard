@@ -50,45 +50,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsTableCell" rowHeight="359" id="Kxu-kL-LbD" customClass="NewsListTableCellViewController" customModule="newsReader" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="newsTableCell" rowHeight="359" id="Kxu-kL-LbD" customClass="NewsListTableCellView" customModule="newsReader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="359"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kxu-kL-LbD" id="WLC-JL-bzR">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="358.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6T-wu-vQE">
-                                            <rect key="frame" x="8" y="216" width="359" height="49"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5K-O3-SAk">
                                             <rect key="frame" x="8" y="165" width="157" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciI-Um-NOF">
-                                            <rect key="frame" x="8" y="8" width="359" height="149"/>
+                                            <rect key="frame" x="6.8811459836897484" y="8" width="359.00000000000011" height="149"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiW-PL-qbR">
-                                            <rect key="frame" x="184" y="170" width="182" height="21"/>
+                                            <rect key="frame" x="223" y="170" width="144" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UXM-5h-F5x">
+                                            <rect key="frame" x="20" y="204" width="335" height="66"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="articleAuthorLabel" destination="I5K-O3-SAk" id="CHP-Px-TXf"/>
                                     <outlet property="articleImage" destination="ciI-Um-NOF" id="DTg-Ry-dS1"/>
                                     <outlet property="articlePublishingDateLabel" destination="hiW-PL-qbR" id="Rf1-M8-Sd7"/>
-                                    <outlet property="articleTitleLabel" destination="y6T-wu-vQE" id="uDi-gZ-q9p"/>
+                                    <outlet property="articleTitleButton" destination="UXM-5h-F5x" id="bV6-Y6-1UN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

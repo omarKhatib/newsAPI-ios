@@ -13,12 +13,12 @@ import AlamofireImage
 import AlamofireNetworkActivityIndicator
 import SwiftyJSON
 
-class NewsListTableCellViewController: UITableViewCell{
+class NewsListTableCellView: UITableViewCell{
 
-    @IBOutlet weak var articleTitleLabel: UILabel!
 
     @IBOutlet weak var articleAuthorLabel: UILabel!
 
     @IBOutlet weak var articleImage: UIImageView!
     @IBOutlet weak var articlePublishingDateLabel: UILabel!
+    @IBOutlet weak var articleTitleButton: UIButton!
 }

@@ -12,6 +12,7 @@ import Alamofire
 import AlamofireImage
 import AlamofireNetworkActivityIndicator
 import SwiftyJSON
+import SDWebImage
 
 class NewsListTableViewController: UITableViewController{
     var selectedSource:String!
@@ -62,12 +63,17 @@ class NewsListTableViewController: UITableViewController{
     // 2
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 3
-        let cell = tableView.dequeueReusableCell(withIdentifier: "newsTableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "newsTableCell", for: indexPath) as! NewsListTableCellViewController
         
         let row = indexPath.row
         
         // 4
-        cell.textLabel?.text = self.arr[row]["title"].rawString()!
+        //cell.textLabel?.text = self.arr[row]["title"].rawString()!
+        
+        cell.articleTitleLabel.text = self.arr[row]["title"].rawString()!
+        cell.articleAuthorLabel.text = self.arr[row]["author"].rawString()!
+        cell.articleImage.sd_setImage(with: URL(string:self.arr[row]["urlToImage"].rawString()! ))
+        
         
         // 5
         return cell

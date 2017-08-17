@@ -45,24 +45,43 @@
         <scene sceneID="1dZ-Xe-q9r">
             <objects>
                 <tableViewController id="Pj0-8c-T8Z" customClass="NewsListTableViewController" customModule="newsReader" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="209" sectionHeaderHeight="28" sectionFooterHeight="28" id="njZ-yO-U8N">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="359" sectionHeaderHeight="28" sectionFooterHeight="28" id="njZ-yO-U8N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsTableCell" rowHeight="209" id="Kxu-kL-LbD">
-                                <rect key="frame" x="0.0" y="28" width="375" height="209"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsTableCell" rowHeight="359" id="Kxu-kL-LbD" customClass="NewsListTableCellViewController" customModule="newsReader" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="359"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kxu-kL-LbD" id="WLC-JL-bzR">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="208.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="358.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvK-jk-ftn">
-                                            <rect key="frame" x="18" y="31" width="240" height="128"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6T-wu-vQE">
+                                            <rect key="frame" x="8" y="191" width="359" height="49"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5K-O3-SAk">
+                                            <rect key="frame" x="102" y="248" width="168" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciI-Um-NOF">
+                                            <rect key="frame" x="8" y="34" width="359" height="149"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="articleAuthorLabel" destination="I5K-O3-SAk" id="CHP-Px-TXf"/>
+                                    <outlet property="articleImage" destination="ciI-Um-NOF" id="DTg-Ry-dS1"/>
+                                    <outlet property="articleTitleLabel" destination="y6T-wu-vQE" id="uDi-gZ-q9p"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -70,9 +89,6 @@
                             <outlet property="delegate" destination="Pj0-8c-T8Z" id="OnM-Zz-XKQ"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="newsImage" destination="cvK-jk-ftn" id="7hE-XP-iYB"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JqZ-zc-bFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

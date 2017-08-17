@@ -8,6 +8,7 @@ pod “Alamofire”
 pod “AlamofireImage”
 pod “AlamofireNetworkActivityIndicator”
 pod “SwiftyJSON”
+pod 'SDWebImage', '~> 4.0'
   # Pods for newsReader
 
   target 'newsReaderTests' do

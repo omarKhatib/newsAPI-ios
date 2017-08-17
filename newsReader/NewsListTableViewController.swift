@@ -73,6 +73,7 @@ class NewsListTableViewController: UITableViewController{
         cell.articleTitleLabel.text = self.arr[row]["title"].rawString()!
         cell.articleAuthorLabel.text = self.arr[row]["author"].rawString()!
         cell.articleImage.sd_setImage(with: URL(string:self.arr[row]["urlToImage"].rawString()! ))
+        cell.articlePublishingDateLabel.text = self.arr[row]["publishedAt"].rawString()!
         
         
         // 5

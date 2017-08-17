@@ -20,4 +20,5 @@ class NewsListTableCellViewController: UITableViewCell{
     @IBOutlet weak var articleAuthorLabel: UILabel!
 
     @IBOutlet weak var articleImage: UIImageView!
+    @IBOutlet weak var articlePublishingDateLabel: UILabel!
 }

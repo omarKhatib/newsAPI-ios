@@ -20,6 +20,8 @@ class NewsListTableViewController: UITableViewController{
     var arr:JSON = []
     
     @IBOutlet weak var newsImage: UIImageView!
+    var refreshControlNews: UIRefreshControl?
+
     
     
     override func viewDidLoad() {
@@ -53,6 +55,19 @@ class NewsListTableViewController: UITableViewController{
         
         
         
+        refreshControlNews = UIRefreshControl()
+        refreshControlNews?.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControlNews?.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        tableView.addSubview(refreshControlNews!)
+        
+        
+        
+    }
+    
+    
+    func refresh(sender:AnyObject) {
+        tableView.reloadData()
+        refreshControlNews?.endRefreshing()
     }
     
     

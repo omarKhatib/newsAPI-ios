@@ -44,7 +44,7 @@ class NewsListTableViewController: UITableViewController{
                     let json = JSON(value)
                     self.arr = json["articles"]
                     self.tableView.reloadData() //reload table view (syc..) to show new data
-                    print(self.arr)
+                    
                     
                     
                 }

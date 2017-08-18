@@ -9,6 +9,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Categories-->
+        <scene sceneID="onY-Yc-EbN">
+            <objects>
+                <tableViewController id="byB-aA-SFI" customClass="CategoriesTableViewController" customModule="newsReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="p9E-wr-FKA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoriesTableCell" id="ktp-DU-Sae">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ktp-DU-Sae" id="WYZ-UF-kJN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="uM8-J4-Vls" kind="show" identifier="showChanels" id="0PS-Yo-uhp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="byB-aA-SFI" id="hEc-dR-gO6"/>
+                            <outlet property="delegate" destination="byB-aA-SFI" id="AXf-Z0-Qyt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Categories" id="6Jn-pR-qPJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONO-QQ-TYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="170"/>
+        </scene>
         <!--Chanels-->
         <scene sceneID="zpg-9q-60E">
             <objects>
@@ -39,7 +71,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzp-ng-jef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="170"/>
+            <point key="canvasLocation" x="864.79999999999995" y="169.56521739130437"/>
         </scene>
         <!--News List Table View Controller-->
         <scene sceneID="1dZ-Xe-q9r">
@@ -122,10 +154,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OtP-dU-BUz">
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A0L-ct-5eG">
                                 <rect key="frame" x="16" y="199" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OtP-dU-BUz">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="auq-vh-4HH">
                                 <rect key="frame" x="16" y="401" width="343" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -182,12 +219,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="uM8-J4-Vls" kind="relationship" relationship="rootViewController" id="uxG-qs-qY0"/>
+                        <segue destination="byB-aA-SFI" kind="relationship" relationship="rootViewController" id="RXb-zS-rWk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3Y-uG-w8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194.40000000000001" y="170.46476761619192"/>
+            <point key="canvasLocation" x="-980" y="170"/>
         </scene>
     </scenes>
 </document>

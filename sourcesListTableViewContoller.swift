@@ -14,12 +14,16 @@ import AlamofireNetworkActivityIndicator
 import SwiftyJSON
 class sourcesListTableViewController : UITableViewController {
     
-    let apiToContact = "https://newsapi.org/v1/sources?language=en&apiKey=26a63d0675f04d459b2214eaf8808f3c"
+    var selectedCategory:String!
+    
+    
+    
+    
     var arr:JSON = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Alamofire.request(apiToContact).validate().responseJSON() { response in
+        Alamofire.request("https://newsapi.org/v1/sources?language=en&category="+selectedCategory+"&apiKey=26a63d0675f04d459b2214eaf8808f3c").validate().responseJSON() { response in
             switch response.result {
             case .success:
                 if let value = response.result.value {
@@ -57,6 +61,7 @@ class sourcesListTableViewController : UITableViewController {
         
         // 5
         return cell
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -71,6 +76,10 @@ class sourcesListTableViewController : UITableViewController {
         
         }
     }
+    
+    
+    
+
     
     
 

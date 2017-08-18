@@ -23,6 +23,7 @@ class sourcesListTableViewController : UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = selectedCategory+" chanels"
         Alamofire.request("https://newsapi.org/v1/sources?language=en&category="+selectedCategory+"&apiKey=26a63d0675f04d459b2214eaf8808f3c").validate().responseJSON() { response in
             switch response.result {
             case .success:

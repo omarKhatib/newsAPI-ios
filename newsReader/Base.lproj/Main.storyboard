@@ -41,7 +41,7 @@
             </objects>
             <point key="canvasLocation" x="-25" y="170"/>
         </scene>
-        <!--Chanels-->
+        <!--Sources List Table View Controller-->
         <scene sceneID="zpg-9q-60E">
             <objects>
                 <tableViewController id="uM8-J4-Vls" customClass="sourcesListTableViewController" customModule="newsReader" customModuleProvider="target" sceneMemberID="viewController">
@@ -67,7 +67,7 @@
                             <outlet property="delegate" destination="uM8-J4-Vls" id="eMd-mD-PTK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Chanels" id="J9D-JJ-AAh"/>
+                    <navigationItem key="navigationItem" id="J9D-JJ-AAh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzp-ng-jef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

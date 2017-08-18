@@ -74,13 +74,46 @@ class NewsListTableViewController: UITableViewController{
         cell.articleAuthorLabel.text = self.arr[row]["author"].rawString()!
         cell.articleImage.sd_setImage(with: URL(string:self.arr[row]["urlToImage"].rawString()! ))
         cell.articlePublishingDateLabel.text = self.arr[row]["publishedAt"].rawString()!
-        
+        cell.articleTitleButton.accessibilityHint = self.arr[row]["description"].rawString()!
+//        cell.articleTitleButton.addTarget(self, action: #selector(self.buttonClicked), for: .touchUpInside)
         
         // 5
         return cell
     }
     
+//    @objc private func buttonClicked(sender:UIButton) {
+//        
+//        print(sender.accessibilityHint!)
+//    }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier{
+            if identifier == "viewSingleArticle"{
+                let indexPath = tableView.indexPathForSelectedRow!
+                let selectedTitle = self.arr[indexPath.row]["title"].rawString()!
+                let selectedImage = self.arr[indexPath.row]["urlToImage"].rawString()!
+                let selectedDescription = self.arr[indexPath.row]["description"].rawString()!
+                let selectedAuthor = self.arr[indexPath.row]["author"].rawString()!
+                let selectedDate = self.arr[indexPath.row]["publishedAt"].rawString()!
+                let selectedUrl = self.arr[indexPath.row]["url"].rawString()!
+                
+              let singleArticleController = segue.destination as! SingleArticleViewController
+                
+                singleArticleController.selectedTitle = selectedTitle
+                singleArticleController.selectedImage = selectedImage
+                singleArticleController.selectedDescription = selectedDescription
+                singleArticleController.selectedAuthor = selectedAuthor
+                singleArticleController.selectedDate = selectedDate
+                singleArticleController.selectedUrl = selectedUrl
+                
+            
+                
+            
+            }
+        
+        }
+    }
     
     
     

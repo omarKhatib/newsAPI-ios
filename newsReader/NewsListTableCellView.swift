@@ -14,7 +14,8 @@ import AlamofireNetworkActivityIndicator
 import SwiftyJSON
 
 class NewsListTableCellView: UITableViewCell{
-
+    
+    @IBOutlet weak var articleDescriptionTextView:UIScrollView!
 
     @IBOutlet weak var articleAuthorLabel: UILabel!
 

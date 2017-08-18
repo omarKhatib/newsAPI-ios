@@ -18,6 +18,7 @@
 		A9D5DB771F43164000182857 /* sourcesListTableViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5DB761F43164000182857 /* sourcesListTableViewContoller.swift */; };
 		A9D5DB791F431A1300182857 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5DB781F431A1300182857 /* NewsListTableViewController.swift */; };
 		A9D5DB7B1F458EEB00182857 /* NewsListTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5DB7A1F458EEB00182857 /* NewsListTableCellView.swift */; };
+		A9D5DB7D1F46DB2C00182857 /* SingleArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5DB7C1F46DB2C00182857 /* SingleArticleViewController.swift */; };
 		D7BEAA09F02952E5A69C33AD /* Pods_newsReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB9FE61849C5F5B9DB578E7 /* Pods_newsReader.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		A9D5DB761F43164000182857 /* sourcesListTableViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = sourcesListTableViewContoller.swift; path = ../sourcesListTableViewContoller.swift; sourceTree = "<group>"; };
 		A9D5DB781F431A1300182857 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 		A9D5DB7A1F458EEB00182857 /* NewsListTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableCellView.swift; sourceTree = "<group>"; };
+		A9D5DB7C1F46DB2C00182857 /* SingleArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleArticleViewController.swift; path = ../SingleArticleViewController.swift; sourceTree = "<group>"; };
 		C0B14512765183E943D0A082 /* Pods-newsReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsReader/Pods-newsReader.debug.xcconfig"; sourceTree = "<group>"; };
 		D64E9DA51F067F1D06EA7861 /* Pods-newsReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-newsReader/Pods-newsReader.release.xcconfig"; sourceTree = "<group>"; };
 		ECC1B11089508D0F0D84FC4E /* Pods_newsReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newsReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,11 +133,12 @@
 		A9D5DB471F43148C00182857 /* newsReader */ = {
 			isa = PBXGroup;
 			children = (
+				A9D5DB7C1F46DB2C00182857 /* SingleArticleViewController.swift */,
+				A9D5DB781F431A1300182857 /* NewsListTableViewController.swift */,
 				A9D5DB481F43148C00182857 /* AppDelegate.swift */,
 				A9D5DB761F43164000182857 /* sourcesListTableViewContoller.swift */,
 				A9D5DB4C1F43148C00182857 /* Main.storyboard */,
 				A9D5DB7A1F458EEB00182857 /* NewsListTableCellView.swift */,
-				A9D5DB781F431A1300182857 /* NewsListTableViewController.swift */,
 				A9D5DB4F1F43148C00182857 /* Assets.xcassets */,
 				A9D5DB511F43148C00182857 /* LaunchScreen.storyboard */,
 				A9D5DB541F43148C00182857 /* Info.plist */,
@@ -473,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D5DB7B1F458EEB00182857 /* NewsListTableCellView.swift in Sources */,
+				A9D5DB7D1F46DB2C00182857 /* SingleArticleViewController.swift in Sources */,
 				A9D5DB491F43148C00182857 /* AppDelegate.swift in Sources */,
 				A9D5DB791F431A1300182857 /* NewsListTableViewController.swift in Sources */,
 				A9D5DB771F43164000182857 /* sourcesListTableViewContoller.swift in Sources */,

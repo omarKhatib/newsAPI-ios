@@ -12,6 +12,7 @@ import UIKit
 
 class LoginViewController : UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,5 +20,13 @@ class LoginViewController : UIViewController {
         
         
 }
+    
+    
+    
+    @IBAction func loginButtonClicked(_ sender: Any) {
+        print("login clicked!!")
+        
+    }
+    
 
 }

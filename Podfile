@@ -9,6 +9,8 @@ pod “AlamofireImage”
 pod “AlamofireNetworkActivityIndicator”
 pod “SwiftyJSON”
 pod 'SDWebImage', '~> 4.0'
+pod 'Firebase/Auth'
+pod 'FirebaseUI/Auth'
   # Pods for newsReader
 
   target 'newsReaderTests' do

@@ -25,7 +25,7 @@ class NewsListTableViewController: UITableViewController{
     
     
     override func viewDidLoad() {
-        
+        print("ddddd")
         
         super.viewDidLoad()
         self.title = selectedSource

@@ -22,6 +22,7 @@
 		A9D5DB811F47204E00182857 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5DB801F47204E00182857 /* CategoriesTableViewController.swift */; };
 		A9D5DB831F4AFD6C00182857 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D5DB821F4AFD6C00182857 /* Login.storyboard */; };
 		A9D5DB851F4AFE4400182857 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5DB841F4AFE4400182857 /* LoginViewController.swift */; };
+		A9D5DB871F4B08A100182857 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9D5DB861F4B08A100182857 /* GoogleService-Info-2.plist */; };
 		D7BEAA09F02952E5A69C33AD /* Pods_newsReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB9FE61849C5F5B9DB578E7 /* Pods_newsReader.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		A9D5DB801F47204E00182857 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		A9D5DB821F4AFD6C00182857 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A9D5DB841F4AFE4400182857 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A9D5DB861F4B08A100182857 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		C0B14512765183E943D0A082 /* Pods-newsReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsReader/Pods-newsReader.debug.xcconfig"; sourceTree = "<group>"; };
 		D64E9DA51F067F1D06EA7861 /* Pods-newsReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-newsReader/Pods-newsReader.release.xcconfig"; sourceTree = "<group>"; };
 		ECC1B11089508D0F0D84FC4E /* Pods_newsReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newsReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,7 @@
 				A9D5DB511F43148C00182857 /* LaunchScreen.storyboard */,
 				A9D5DB541F43148C00182857 /* Info.plist */,
 				A9D5DB821F4AFD6C00182857 /* Login.storyboard */,
+				A9D5DB861F4B08A100182857 /* GoogleService-Info-2.plist */,
 				A9D5DB841F4AFE4400182857 /* LoginViewController.swift */,
 			);
 			path = newsReader;
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D5DB871F4B08A100182857 /* GoogleService-Info-2.plist in Resources */,
 				A9D5DB831F4AFD6C00182857 /* Login.storyboard in Resources */,
 				A9D5DB531F43148C00182857 /* LaunchScreen.storyboard in Resources */,
 				A9D5DB501F43148C00182857 /* Assets.xcassets in Resources */,

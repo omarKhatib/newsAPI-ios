@@ -11,6 +11,7 @@ pod “SwiftyJSON”
 pod 'SDWebImage', '~> 4.0'
 pod 'Firebase/Auth'
 pod 'FirebaseUI/Auth'
+pod 'Firebase/Core'
   # Pods for newsReader
 
   target 'newsReaderTests' do

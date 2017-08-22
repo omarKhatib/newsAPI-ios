@@ -12,6 +12,7 @@ pod 'SDWebImage', '~> 4.0'
 pod 'Firebase/Auth'
 pod 'FirebaseUI/Auth'
 pod 'Firebase/Core'
+pod 'Firebase/Database'
   # Pods for newsReader
 
   target 'newsReaderTests' do
